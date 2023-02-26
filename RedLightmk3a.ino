@@ -13,16 +13,16 @@
 #define PIN3        8 //
 
 // How many NeoPixels are attached to the Arduino?
-#define NUMPIXELS1 14 // Popular NeoPixel ring size
-#define NUMPIXELS2 16 // Popular NeoPixel ring size
+#define NUMPIXELS1 14 // Popular NeoPixel ring size - Eyes
+#define NUMPIXELS2 16 // Popular NeoPixel ring size - Ladder light
 
 // When setting up the NeoPixel library, we tell it how many pixels,
 // and which pin to use to send signals. Note that for older NeoPixel
 // strips you might need to change the third parameter -- see the
 // strandtest example for more information on possible values.
 
-Adafruit_NeoPixel pixel1(NUMPIXELS1, PIN1, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel pixel2(NUMPIXELS2, PIN2, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel pixel1(NUMPIXELS1, PIN1, NEO_GRB + NEO_KHZ800); //Eyes
+Adafruit_NeoPixel pixel2(NUMPIXELS2, PIN2, NEO_GRB + NEO_KHZ800); //Ladder light
 
 #define DELAYVAL 180 // Time (in milliseconds) to pause between pixels
 
